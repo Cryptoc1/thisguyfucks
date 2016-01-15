@@ -4,6 +4,7 @@
 <head>
     <title>This Guy Fucks</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <style>
         html,
         body {
@@ -30,17 +31,23 @@
         }
         
         #thisguy {
-            width: 30%;
+            width: 45%;
             border-radius: 2px;
             margin-top: 4%;
         }
         
         #credit {
-            position: absolute;
             display: block;
-            bottom: 2%;
-            left: 47%;
+            padding: 14px;
             text-decoration: none;
+            text-align: center;
+            opacity: .65;
+        }
+        
+        @media screen and (max-width: 700px) {
+            #thisguy {
+                width: 80%;
+            }
         }
     </style>
 </head>
@@ -51,6 +58,8 @@
     <br>
     <br>
     <img id="thisguy" src="static/josh.jpg">
+    <br>
+    <br>
     <a id="credit" href="//cryptoc1.github.io">coded by sam steele</a>
 </body>
 
